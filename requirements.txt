@@ -1,0 +1,14 @@
+pandas==3.0.5
+numpy==2.5.3
+pyarrow==26.0.1
+scipy==1.18.1
+matplotlib==3.11.2
+seaborn==0.13.2
+gymnasium==1.4.0
+stable-baselines3==2.9.2
+torch==2.15.0
+streamlit==1.67.0
+altair==6.3.0
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel
