@@ -19,6 +19,8 @@ Un agent RL décide chaque heure s'il faut chauffer le ballon d'eau chaude et ch
 
 L'agent bat la règle experte sur 8 saisons sur 9 (+9,4 € par saison en moyenne). Le gain au-delà de l'expert reste faible (0,7 % sur le test), et il reste environ 10 % d'écart avec l'optimum théorique.
 
+**Robustesse à la prévision solaire** (`robustesse_prevision.py`) : l'agent a été entraîné avec une prévision parfaite, mais il n'en dépend presque pas. Avec 50 % d'erreur sur la production de chaque jour, la facture de test reste entre 1 243 et 1 247 € ; sans aucune prévision météo (demain comme aujourd'hui), elle est de 1 244,5 €, toujours sous la règle experte. Un agent entraîné sans la prévision à 24 h (`ablation_sans24h.py`) fait 1 241,6 €.
+
 ## Données (publiques)
 
 | Source | Usage | Licence |
@@ -41,8 +43,11 @@ energy_rl/
   train.py                     PPO à partir de zéro (v1)
   train_v3.py                  imitation de la règle experte puis PPO (version finale : ppo_v4)
   continuer.py                 prolonge un entraînement
+  robustesse_prevision.py      réévalue l'agent avec une prévision solaire bruitée ou absente
+  ablation_sans24h.py          contrôle : même entraînement sans la prévision solaire à 24 h
+  resultats_robustesse.csv     résultats de ces deux tests
   export_dashboard.py          précalcule les simulations de la saison test pour le tableau de bord
-  modeles/                     agent final (ppo_v4_meilleur.zip) et historiques d'apprentissage
+  modeles/                     agent final (ppo_v4_meilleur.zip), agent de contrôle (ppo_v4_sans24h_meilleur.zip), historiques
   notebooks/                   01 données, 02 simulateur et règles, 03 agent (.ipynb exécutés + .html)
   dashboard/                   Streamlit (stlite), déployé sur un Space Hugging Face statique
 ```
@@ -62,7 +67,7 @@ cd ../dashboard && streamlit run app.py
 
 - Ballon de 300 L à 3 kW (7 kWh utiles), pertes de 0,5 % par heure, sécurité du thermostat sous 1 kWh, identique pour tous les pilotes.
 - Batterie de 5 kWh / 2,5 kW, rendement de 95 % par sens. Le surplus solaire n'est pas rémunéré.
-- La couleur du lendemain est connue à partir de 11 h. Les prévisions solaires à 6 h et à 24 h sont supposées parfaites.
+- La couleur du lendemain est connue à partir de 11 h. Les prévisions solaires à 6 h et à 24 h sont supposées parfaites à l'entraînement (voir le test de robustesse ci-dessus).
 - La conso de 2006-2010 est rejouée sur le calendrier 2014-2023 : même semaine et même jour de la semaine.
 - Découpage : apprentissage sur les saisons 2014-2015 à 2020-2021, choix du modèle sur 2021-2022, test sur 2022-2023.
 
