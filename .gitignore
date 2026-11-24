@@ -1,0 +1,6 @@
+data/household_power_consumption.txt
+data/uci_household.zip
+data/uci_hourly.parquet
+__pycache__/
+.ipynb_checkpoints/
+*.log
