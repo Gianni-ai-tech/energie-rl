@@ -124,7 +124,22 @@ gen
 """)
 lecture("generalisation")
 
-md("## 5. Limites et suite")
+md("""## 5. Et si la prévision solaire est fausse ?
+
+L'agent a été entraîné avec le solaire des 6 et 24 prochaines heures connu exactement. On le réévalue sans le réentraîner (`robustesse_prevision.py`) :
+- **prévision bruitée** : la production de chaque jour prévu est multipliée par un facteur aléatoire (erreur de 10, 25 ou 50 %), 5 tirages par niveau ;
+- **persistance** : « demain comme aujourd'hui », c'est-à-dire aucune prévision météo ;
+- **contrôle** : un agent entraîné exactement pareil, mais sans la prévision à 24 h (`ablation_sans24h.py`).
+
+La règle experte n'utilise aucune prévision : son résultat ne change pas.""")
+code("""
+rob = pd.read_csv("../resultats_robustesse.csv")
+(rob.groupby(["saison", "scenario"], sort=False)["facture_eur"].agg(["mean", "min", "max"]).round(1)
+    .rename(columns={"mean": "facture moyenne (€)", "min": "min", "max": "max"}))
+""")
+lecture("robustesse")
+
+md("## 6. Limites et suite")
 lecture("limites")
 
 nb.cells = C

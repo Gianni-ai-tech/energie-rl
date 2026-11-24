@@ -2,7 +2,7 @@ INTERP = {
 "apprentissage": """**Lecture.**
 - **v1, à partir de zéro :** l'agent part de très haut (1 344 € à 50 000 heures). Il passe sous le thermostat (1 302 €), puis sous le contacteur heures creuses (1 224 €), mais plafonne vers 1 133 € après 1,5 million d'heures, avec 27 heures d'eau froide. Il n'atteint jamais la règle experte.
 - **Version finale, imitation puis RL :** l'agent reproduit d'abord l'expert (98,4 % de décisions identiques, 1 129 €). Ensuite PPO l'améliore jusqu'à 1 105 € (score de 1 110 € avec la pénalité d'eau froide), à 1,95 million d'heures.
-- **Ce qui a débloqué la situation :** donner à l'agent la prévision solaire du lendemain. Sans elle, imitation puis PPO restait collé à l'expert (essais v3, non montrés).
+- **Ce qui a débloqué la situation : la durée, pas la prévision.** J'avais attribué le progrès à la prévision solaire du lendemain, ajoutée au même moment. Le contrôle de la section 5 le dément : entraîné exactement pareil sans cette prévision, l'agent décroche de l'expert après 650 000 heures et atteint 1 107 € en validation. L'essai précédent sans elle, avec les mêmes réglages, avait été arrêté à 350 000 heures, juste avant. La prévision a peut-être accéléré l'apprentissage (décrochage dès 300 000 heures), mais elle n'explique pas le résultat.
 - **Pourquoi la courbe est bruitée :** le score est celui d'une saison entière, et une petite modification de la politique déplace des centaines de décisions. On garde le meilleur modèle sur la validation.""",
 
 "resultat": """**Lecture (saison test 2022-2023, jamais vue).**
@@ -39,13 +39,19 @@ INTERP = {
 
 **Limites assumées.**
 - **Une seule maison, une seule saison test :** le gain de 8,5 € est trop petit pour être affirmé avec certitude. Il faudrait tester sur d'autres foyers.
-- **Prévisions supposées parfaites :** le solaire à 24 h est connu exactement. Avec une vraie prévision météo, le gain serait plus faible.
+- **Prévision solaire :** l'agent a été entraîné avec une prévision parfaite, mais il n'en dépend presque pas (section 5). Sans aucune prévision météo, il fait encore mieux que la règle experte.
 - **Simulateur simplifié :** pertes du ballon proportionnelles, rendement de batterie fixe, pas de vieillissement.
 - **Décalage de dates :** la conso de 2006-2010 est rejouée sur le calendrier 2014-2023.
 
 **Pistes.**
 1. Réentraîner avec l'interdiction de chauffer en heure pleine rouge (contrainte apprise, pas plaquée).
-2. Une prévision solaire bruitée, pour mesurer la perte réelle.
-3. Plusieurs maisons (jeux de données de type Linky, avec consentement).
-4. Tester sur un vrai ballon piloté par un boîtier domotique.""",
+2. Plusieurs maisons (jeux de données de type Linky, avec consentement).
+3. Tester sur un vrai ballon piloté par un boîtier domotique.""",
+
+"robustesse": """**Lecture.**
+- **Prévision bruitée :** même avec 50 % d'erreur sur la production de chaque jour, la facture de test bouge de moins de 4 € (1 243 à 1 247 €, contre 1 243,7 € avec la prévision parfaite).
+- **Sans aucune prévision météo** (persistance : demain comme aujourd'hui) : 1 244,5 € en test et 1 112,0 € en validation. L'agent reste meilleur que la règle experte (1 252,2 € et 1 127,6 €).
+- **Contrôle :** entraîné exactement pareil mais sans la prévision à 24 h, l'agent fait 1 241,6 € en test et 1 106,8 € en validation, soit autant que l'agent final.
+- **Conclusion :** l'hypothèse d'une prévision parfaite ne gonfle pas le résultat. Ce qui compte, ce sont des habitudes apprises (moins de chauffe la nuit, gestion de la batterie), pas la connaissance du soleil du lendemain.
+- **Limite du test :** le bruit est simulé (un facteur par jour), pas tiré d'une vraie prévision météo ; la persistance donne le cas le plus défavorable.""",
 }

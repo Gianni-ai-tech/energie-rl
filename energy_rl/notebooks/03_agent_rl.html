@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c40ce7c2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=180ede70">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7813,7 +7813,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b318356c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=129bc1e6">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7838,7 +7838,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1150cae2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a56840c4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7848,7 +7848,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9dc303fc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4ca4f528">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7895,7 +7895,7 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f927fef3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5f9ff8da">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7905,14 +7905,14 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 <ul>
 <li><strong>v1, à partir de zéro :</strong> l'agent part de très haut (1 344 € à 50 000 heures). Il passe sous le thermostat (1 302 €), puis sous le contacteur heures creuses (1 224 €), mais plafonne vers 1 133 € après 1,5 million d'heures, avec 27 heures d'eau froide. Il n'atteint jamais la règle experte.</li>
 <li><strong>Version finale, imitation puis RL :</strong> l'agent reproduit d'abord l'expert (98,4 % de décisions identiques, 1 129 €). Ensuite PPO l'améliore jusqu'à 1 105 € (score de 1 110 € avec la pénalité d'eau froide), à 1,95 million d'heures.</li>
-<li><strong>Ce qui a débloqué la situation :</strong> donner à l'agent la prévision solaire du lendemain. Sans elle, imitation puis PPO restait collé à l'expert (essais v3, non montrés).</li>
+<li><strong>Ce qui a débloqué la situation : la durée, pas la prévision.</strong> J'avais attribué le progrès à la prévision solaire du lendemain, ajoutée au même moment. Le contrôle de la section 5 le dément : entraîné exactement pareil sans cette prévision, l'agent décroche de l'expert après 650 000 heures et atteint 1 107 € en validation. L'essai précédent sans elle, avec les mêmes réglages, avait été arrêté à 350 000 heures, juste avant. La prévision a peut-être accéléré l'apprentissage (décrochage dès 300 000 heures), mais elle n'explique pas le résultat.</li>
 <li><strong>Pourquoi la courbe est bruitée :</strong> le score est celui d'une saison entière, et une petite modification de la politique déplace des centaines de décisions. On garde le meilleur modèle sur la validation.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d72b3c22">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c2707e0a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7922,7 +7922,7 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cbc962ba">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=02c3eca4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8093,7 +8093,7 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d1713bf6">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=895f4d9b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8158,7 +8158,7 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aa49e75e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a091aa31">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8168,7 +8168,7 @@ version finale : facture après imitation 1128.8 € | meilleur score 1110.0 à 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f3c933a6">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8451391b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8217,7 +8217,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2e32496b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=94439ae3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8231,7 +8231,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2f998670">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e573d931">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8267,7 +8267,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b67c9c2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4e33ff2b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8283,7 +8283,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a688a53a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=71d1e789">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8293,7 +8293,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1b89b2a3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0a5d2990">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8449,7 +8449,7 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dc3ca985">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2e4fee15">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8466,18 +8466,201 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=94979299">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ddb54bec">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="5.-Limites-et-suite">5. Limites et suite<a class="anchor-link" href="#5.-Limites-et-suite">¶</a></h2>
+<h2 id="5.-Et-si-la-pr%C3%A9vision-solaire-est-fausse-?">5. Et si la prévision solaire est fausse ?<a class="anchor-link" href="#5.-Et-si-la-pr%C3%A9vision-solaire-est-fausse-?">¶</a></h2><p>L'agent a été entraîné avec le solaire des 6 et 24 prochaines heures connu exactement. On le réévalue sans le réentraîner (<code>robustesse_prevision.py</code>) :</p>
+<ul>
+<li><strong>prévision bruitée</strong> : la production de chaque jour prévu est multipliée par un facteur aléatoire (erreur de 10, 25 ou 50 %), 5 tirages par niveau ;</li>
+<li><strong>persistance</strong> : « demain comme aujourd'hui », c'est-à-dire aucune prévision météo ;</li>
+<li><strong>contrôle</strong> : un agent entraîné exactement pareil, mais sans la prévision à 24 h (<code>ablation_sans24h.py</code>).</li>
+</ul>
+<p>La règle experte n'utilise aucune prévision : son résultat ne change pas.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f24be415">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">rob</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"../resultats_robustesse.csv"</span><span class="p">)</span>
+<span class="p">(</span><span class="n">rob</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"saison"</span><span class="p">,</span> <span class="s2">"scenario"</span><span class="p">],</span> <span class="n">sort</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="s2">"facture_eur"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"mean"</span><span class="p">,</span> <span class="s2">"min"</span><span class="p">,</span> <span class="s2">"max"</span><span class="p">])</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">"mean"</span><span class="p">:</span> <span class="s2">"facture moyenne (€)"</span><span class="p">,</span> <span class="s2">"min"</span><span class="p">:</span> <span class="s2">"min"</span><span class="p">,</span> <span class="s2">"max"</span><span class="p">:</span> <span class="s2">"max"</span><span class="p">}))</span>
+</pre></div>
 </div>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ff7e2a8d">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th></th>
+<th>facture moyenne (€)</th>
+<th>min</th>
+<th>max</th>
+</tr>
+<tr>
+<th>saison</th>
+<th>scenario</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th rowspan="7" valign="top">2021-2022</th>
+<th>règle experte</th>
+<td>1127.6</td>
+<td>1127.6</td>
+<td>1127.6</td>
+</tr>
+<tr>
+<th>agent, prévision parfaite</th>
+<td>1105.3</td>
+<td>1105.3</td>
+<td>1105.3</td>
+</tr>
+<tr>
+<th>agent, bruit 10 %</th>
+<td>1105.7</td>
+<td>1105.1</td>
+<td>1106.4</td>
+</tr>
+<tr>
+<th>agent, bruit 25 %</th>
+<td>1106.2</td>
+<td>1103.9</td>
+<td>1109.2</td>
+</tr>
+<tr>
+<th>agent, bruit 50 %</th>
+<td>1109.0</td>
+<td>1107.2</td>
+<td>1111.3</td>
+</tr>
+<tr>
+<th>agent, persistance (sans météo)</th>
+<td>1112.0</td>
+<td>1112.0</td>
+<td>1112.0</td>
+</tr>
+<tr>
+<th>contrôle : agent entraîné sans la prévision à 24 h</th>
+<td>1106.8</td>
+<td>1106.8</td>
+<td>1106.8</td>
+</tr>
+<tr>
+<th rowspan="7" valign="top">2022-2023</th>
+<th>règle experte</th>
+<td>1252.2</td>
+<td>1252.2</td>
+<td>1252.2</td>
+</tr>
+<tr>
+<th>agent, prévision parfaite</th>
+<td>1243.7</td>
+<td>1243.7</td>
+<td>1243.7</td>
+</tr>
+<tr>
+<th>agent, bruit 10 %</th>
+<td>1242.9</td>
+<td>1242.0</td>
+<td>1243.8</td>
+</tr>
+<tr>
+<th>agent, bruit 25 %</th>
+<td>1243.2</td>
+<td>1242.4</td>
+<td>1244.6</td>
+</tr>
+<tr>
+<th>agent, bruit 50 %</th>
+<td>1245.4</td>
+<td>1243.0</td>
+<td>1247.1</td>
+</tr>
+<tr>
+<th>agent, persistance (sans météo)</th>
+<td>1244.5</td>
+<td>1244.5</td>
+<td>1244.5</td>
+</tr>
+<tr>
+<th>contrôle : agent entraîné sans la prévision à 24 h</th>
+<td>1241.6</td>
+<td>1241.6</td>
+<td>1241.6</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d82540a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Lecture.</strong></p>
+<ul>
+<li><strong>Prévision bruitée :</strong> même avec 50 % d'erreur sur la production de chaque jour, la facture de test bouge de moins de 4 € (1 243 à 1 247 €, contre 1 243,7 € avec la prévision parfaite).</li>
+<li><strong>Sans aucune prévision météo</strong> (persistance : demain comme aujourd'hui) : 1 244,5 € en test et 1 112,0 € en validation. L'agent reste meilleur que la règle experte (1 252,2 € et 1 127,6 €).</li>
+<li><strong>Contrôle :</strong> entraîné exactement pareil mais sans la prévision à 24 h, l'agent fait 1 241,6 € en test et 1 106,8 € en validation, soit autant que l'agent final.</li>
+<li><strong>Conclusion :</strong> l'hypothèse d'une prévision parfaite ne gonfle pas le résultat. Ce qui compte, ce sont des habitudes apprises (moins de chauffe la nuit, gestion de la batterie), pas la connaissance du soleil du lendemain.</li>
+<li><strong>Limite du test :</strong> le bruit est simulé (un facteur par jour), pas tiré d'une vraie prévision météo ; la persistance donne le cas le plus défavorable.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=dd8520e7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="6.-Limites-et-suite">6. Limites et suite<a class="anchor-link" href="#6.-Limites-et-suite">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c5e5e499">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8487,14 +8670,13 @@ agent RL : 36.4 kWh achetés en heures pleines rouges, dont 27.6 kWh entre 18 h 
 <p><strong>Limites assumées.</strong></p>
 <ul>
 <li><strong>Une seule maison, une seule saison test :</strong> le gain de 8,5 € est trop petit pour être affirmé avec certitude. Il faudrait tester sur d'autres foyers.</li>
-<li><strong>Prévisions supposées parfaites :</strong> le solaire à 24 h est connu exactement. Avec une vraie prévision météo, le gain serait plus faible.</li>
+<li><strong>Prévision solaire :</strong> l'agent a été entraîné avec une prévision parfaite, mais il n'en dépend presque pas (section 5). Sans aucune prévision météo, il fait encore mieux que la règle experte.</li>
 <li><strong>Simulateur simplifié :</strong> pertes du ballon proportionnelles, rendement de batterie fixe, pas de vieillissement.</li>
 <li><strong>Décalage de dates :</strong> la conso de 2006-2010 est rejouée sur le calendrier 2014-2023.</li>
 </ul>
 <p><strong>Pistes.</strong></p>
 <ol>
 <li>Réentraîner avec l'interdiction de chauffer en heure pleine rouge (contrainte apprise, pas plaquée).</li>
-<li>Une prévision solaire bruitée, pour mesurer la perte réelle.</li>
 <li>Plusieurs maisons (jeux de données de type Linky, avec consentement).</li>
 <li>Tester sur un vrai ballon piloté par un boîtier domotique.</li>
 </ol>
