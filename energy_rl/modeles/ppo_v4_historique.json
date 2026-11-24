@@ -1,0 +1,412 @@
+[
+ {
+  "pas": 0,
+  "facture_eur": 1128.8,
+  "achat_kwh": 6420.0,
+  "rouge_hp_kwh": 258.0,
+  "autoconso_pct": 86.8,
+  "eau_froide_h": 8,
+  "eau_froide_kwh": 0.45,
+  "score": 1130.1
+ },
+ {
+  "pas": 50000,
+  "facture_eur": 1129.7,
+  "achat_kwh": 6422.0,
+  "rouge_hp_kwh": 258.0,
+  "autoconso_pct": 86.8,
+  "eau_froide_h": 12,
+  "eau_froide_kwh": 0.7,
+  "score": 1131.8
+ },
+ {
+  "pas": 100000,
+  "facture_eur": 1130.9,
+  "achat_kwh": 6432.0,
+  "rouge_hp_kwh": 258.0,
+  "autoconso_pct": 86.6,
+  "eau_froide_h": 16,
+  "eau_froide_kwh": 0.98,
+  "score": 1133.8
+ },
+ {
+  "pas": 150000,
+  "facture_eur": 1131.7,
+  "achat_kwh": 6473.0,
+  "rouge_hp_kwh": 261.0,
+  "autoconso_pct": 86.3,
+  "eau_froide_h": 8,
+  "eau_froide_kwh": 0.62,
+  "score": 1133.6
+ },
+ {
+  "pas": 200000,
+  "facture_eur": 1136.9,
+  "achat_kwh": 6489.0,
+  "rouge_hp_kwh": 259.9,
+  "autoconso_pct": 85.8,
+  "eau_froide_h": 2,
+  "eau_froide_kwh": 0.14,
+  "score": 1137.3
+ },
+ {
+  "pas": 250000,
+  "facture_eur": 1131.4,
+  "achat_kwh": 6353.0,
+  "rouge_hp_kwh": 272.8,
+  "autoconso_pct": 88.9,
+  "eau_froide_h": 0,
+  "eau_froide_kwh": 0.0,
+  "score": 1131.4
+ },
+ {
+  "pas": 300000,
+  "facture_eur": 1118.3,
+  "achat_kwh": 6310.0,
+  "rouge_hp_kwh": 264.1,
+  "autoconso_pct": 90.4,
+  "eau_froide_h": 6,
+  "eau_froide_kwh": 0.39,
+  "score": 1119.5
+ },
+ {
+  "pas": 350000,
+  "facture_eur": 1120.3,
+  "achat_kwh": 6315.0,
+  "rouge_hp_kwh": 266.9,
+  "autoconso_pct": 90.5,
+  "eau_froide_h": 2,
+  "eau_froide_kwh": 0.06,
+  "score": 1120.5
+ },
+ {
+  "pas": 400000,
+  "facture_eur": 1121.7,
+  "achat_kwh": 6261.0,
+  "rouge_hp_kwh": 278.0,
+  "autoconso_pct": 91.8,
+  "eau_froide_h": 3,
+  "eau_froide_kwh": 0.17,
+  "score": 1122.2
+ },
+ {
+  "pas": 450000,
+  "facture_eur": 1128.8,
+  "achat_kwh": 6237.0,
+  "rouge_hp_kwh": 296.7,
+  "autoconso_pct": 92.6,
+  "eau_froide_h": 9,
+  "eau_froide_kwh": 0.63,
+  "score": 1130.7
+ },
+ {
+  "pas": 500000,
+  "facture_eur": 1123.9,
+  "achat_kwh": 6236.0,
+  "rouge_hp_kwh": 283.3,
+  "autoconso_pct": 92.7,
+  "eau_froide_h": 13,
+  "eau_froide_kwh": 0.73,
+  "score": 1126.1
+ },
+ {
+  "pas": 550000,
+  "facture_eur": 1126.8,
+  "achat_kwh": 6328.0,
+  "rouge_hp_kwh": 279.7,
+  "autoconso_pct": 90.7,
+  "eau_froide_h": 6,
+  "eau_froide_kwh": 0.19,
+  "score": 1127.4
+ },
+ {
+  "pas": 600000,
+  "facture_eur": 1115.4,
+  "achat_kwh": 6124.0,
+  "rouge_hp_kwh": 274.2,
+  "autoconso_pct": 94.7,
+  "eau_froide_h": 6,
+  "eau_froide_kwh": 0.4,
+  "score": 1116.6
+ },
+ {
+  "pas": 650000,
+  "facture_eur": 1113.7,
+  "achat_kwh": 6121.0,
+  "rouge_hp_kwh": 274.5,
+  "autoconso_pct": 95.4,
+  "eau_froide_h": 15,
+  "eau_froide_kwh": 0.72,
+  "score": 1115.9
+ },
+ {
+  "pas": 700000,
+  "facture_eur": 1115.9,
+  "achat_kwh": 6101.0,
+  "rouge_hp_kwh": 272.0,
+  "autoconso_pct": 95.2,
+  "eau_froide_h": 11,
+  "eau_froide_kwh": 0.42,
+  "score": 1117.2
+ },
+ {
+  "pas": 750000,
+  "facture_eur": 1117.6,
+  "achat_kwh": 6126.0,
+  "rouge_hp_kwh": 279.0,
+  "autoconso_pct": 95.0,
+  "eau_froide_h": 15,
+  "eau_froide_kwh": 0.64,
+  "score": 1119.5
+ },
+ {
+  "pas": 800000,
+  "facture_eur": 1146.9,
+  "achat_kwh": 6125.0,
+  "rouge_hp_kwh": 331.4,
+  "autoconso_pct": 95.1,
+  "eau_froide_h": 15,
+  "eau_froide_kwh": 0.47,
+  "score": 1148.3
+ },
+ {
+  "pas": 850000,
+  "facture_eur": 1141.7,
+  "achat_kwh": 6087.0,
+  "rouge_hp_kwh": 308.7,
+  "autoconso_pct": 94.7,
+  "eau_froide_h": 24,
+  "eau_froide_kwh": 1.22,
+  "score": 1145.4
+ },
+ {
+  "pas": 900000,
+  "facture_eur": 1150.2,
+  "achat_kwh": 6114.0,
+  "rouge_hp_kwh": 318.0,
+  "autoconso_pct": 94.0,
+  "eau_froide_h": 21,
+  "eau_froide_kwh": 1.22,
+  "score": 1153.9
+ },
+ {
+  "pas": 950000,
+  "facture_eur": 1138.0,
+  "achat_kwh": 6119.0,
+  "rouge_hp_kwh": 299.8,
+  "autoconso_pct": 94.4,
+  "eau_froide_h": 22,
+  "eau_froide_kwh": 0.65,
+  "score": 1140.0
+ },
+ {
+  "pas": 1000000,
+  "facture_eur": 1143.8,
+  "achat_kwh": 6209.0,
+  "rouge_hp_kwh": 313.9,
+  "autoconso_pct": 92.8,
+  "eau_froide_h": 20,
+  "eau_froide_kwh": 1.38,
+  "score": 1147.9
+ },
+ {
+  "pas": 1050000,
+  "facture_eur": 1117.1,
+  "achat_kwh": 6171.0,
+  "rouge_hp_kwh": 271.7,
+  "autoconso_pct": 93.8,
+  "eau_froide_h": 18,
+  "eau_froide_kwh": 0.59,
+  "score": 1118.9
+ },
+ {
+  "pas": 1100000,
+  "facture_eur": 1130.8,
+  "achat_kwh": 6163.0,
+  "rouge_hp_kwh": 297.9,
+  "autoconso_pct": 94.3,
+  "eau_froide_h": 7,
+  "eau_froide_kwh": 0.35,
+  "score": 1131.8
+ },
+ {
+  "pas": 1150000,
+  "facture_eur": 1136.6,
+  "achat_kwh": 6171.0,
+  "rouge_hp_kwh": 301.9,
+  "autoconso_pct": 94.2,
+  "eau_froide_h": 12,
+  "eau_froide_kwh": 0.41,
+  "score": 1137.8
+ },
+ {
+  "pas": 1200000,
+  "facture_eur": 1168.0,
+  "achat_kwh": 6186.0,
+  "rouge_hp_kwh": 348.3,
+  "autoconso_pct": 93.4,
+  "eau_froide_h": 9,
+  "eau_froide_kwh": 0.28,
+  "score": 1168.8
+ },
+ {
+  "pas": 1250000,
+  "facture_eur": 1159.3,
+  "achat_kwh": 6182.0,
+  "rouge_hp_kwh": 334.4,
+  "autoconso_pct": 93.8,
+  "eau_froide_h": 13,
+  "eau_froide_kwh": 0.85,
+  "score": 1161.8
+ },
+ {
+  "pas": 1300000,
+  "facture_eur": 1130.4,
+  "achat_kwh": 6136.0,
+  "rouge_hp_kwh": 296.3,
+  "autoconso_pct": 94.8,
+  "eau_froide_h": 13,
+  "eau_froide_kwh": 0.75,
+  "score": 1132.7
+ },
+ {
+  "pas": 1350000,
+  "facture_eur": 1124.5,
+  "achat_kwh": 6071.0,
+  "rouge_hp_kwh": 289.6,
+  "autoconso_pct": 95.6,
+  "eau_froide_h": 11,
+  "eau_froide_kwh": 0.51,
+  "score": 1126.0
+ },
+ {
+  "pas": 1400000,
+  "facture_eur": 1131.5,
+  "achat_kwh": 6046.0,
+  "rouge_hp_kwh": 298.8,
+  "autoconso_pct": 95.8,
+  "eau_froide_h": 21,
+  "eau_froide_kwh": 1.33,
+  "score": 1135.5
+ },
+ {
+  "pas": 1450000,
+  "facture_eur": 1192.1,
+  "achat_kwh": 6048.0,
+  "rouge_hp_kwh": 396.6,
+  "autoconso_pct": 95.3,
+  "eau_froide_h": 34,
+  "eau_froide_kwh": 1.58,
+  "score": 1196.8
+ },
+ {
+  "pas": 1500000,
+  "facture_eur": 1127.5,
+  "achat_kwh": 6024.0,
+  "rouge_hp_kwh": 287.0,
+  "autoconso_pct": 96.0,
+  "eau_froide_h": 25,
+  "eau_froide_kwh": 1.67,
+  "score": 1132.5
+ },
+ {
+  "pas": 1550000,
+  "facture_eur": 1121.6,
+  "achat_kwh": 6041.0,
+  "rouge_hp_kwh": 277.7,
+  "autoconso_pct": 95.7,
+  "eau_froide_h": 14,
+  "eau_froide_kwh": 0.8,
+  "score": 1124.0
+ },
+ {
+  "pas": 1600000,
+  "facture_eur": 1145.9,
+  "achat_kwh": 6036.0,
+  "rouge_hp_kwh": 329.6,
+  "autoconso_pct": 95.8,
+  "eau_froide_h": 12,
+  "eau_froide_kwh": 0.6,
+  "score": 1147.7
+ },
+ {
+  "pas": 1650000,
+  "facture_eur": 1128.1,
+  "achat_kwh": 6064.0,
+  "rouge_hp_kwh": 271.1,
+  "autoconso_pct": 95.1,
+  "eau_froide_h": 21,
+  "eau_froide_kwh": 1.18,
+  "score": 1131.6
+ },
+ {
+  "pas": 1700000,
+  "facture_eur": 1134.7,
+  "achat_kwh": 6078.0,
+  "rouge_hp_kwh": 288.3,
+  "autoconso_pct": 95.6,
+  "eau_froide_h": 12,
+  "eau_froide_kwh": 0.59,
+  "score": 1136.5
+ },
+ {
+  "pas": 1750000,
+  "facture_eur": 1124.5,
+  "achat_kwh": 6084.0,
+  "rouge_hp_kwh": 274.5,
+  "autoconso_pct": 95.6,
+  "eau_froide_h": 12,
+  "eau_froide_kwh": 0.52,
+  "score": 1126.1
+ },
+ {
+  "pas": 1800000,
+  "facture_eur": 1130.5,
+  "achat_kwh": 6106.0,
+  "rouge_hp_kwh": 291.0,
+  "autoconso_pct": 94.6,
+  "eau_froide_h": 19,
+  "eau_froide_kwh": 1.05,
+  "score": 1133.7
+ },
+ {
+  "pas": 1850000,
+  "facture_eur": 1123.2,
+  "achat_kwh": 6119.0,
+  "rouge_hp_kwh": 272.6,
+  "autoconso_pct": 94.3,
+  "eau_froide_h": 25,
+  "eau_froide_kwh": 1.35,
+  "score": 1127.2
+ },
+ {
+  "pas": 1900000,
+  "facture_eur": 1118.3,
+  "achat_kwh": 6145.0,
+  "rouge_hp_kwh": 256.6,
+  "autoconso_pct": 93.3,
+  "eau_froide_h": 35,
+  "eau_froide_kwh": 2.35,
+  "score": 1125.3
+ },
+ {
+  "pas": 1950000,
+  "facture_eur": 1105.3,
+  "achat_kwh": 6139.0,
+  "rouge_hp_kwh": 248.1,
+  "autoconso_pct": 93.9,
+  "eau_froide_h": 27,
+  "eau_froide_kwh": 1.56,
+  "score": 1110.0
+ },
+ {
+  "pas": 2000000,
+  "facture_eur": 1107.7,
+  "achat_kwh": 6144.0,
+  "rouge_hp_kwh": 251.7,
+  "autoconso_pct": 93.9,
+  "eau_froide_h": 17,
+  "eau_froide_kwh": 0.96,
+  "score": 1110.6
+ }
+]
